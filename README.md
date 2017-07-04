@@ -15,7 +15,18 @@ Weex: 4
 React Native: 3.5
 
 ```
-### 2、学习成本
+### 2、版本要求
+Weex: 支持安卓4.0+，ios7.0+
+React Native: 支持安卓4.1+, ios7.0+
+
+总结: 版本要求Weex略胜一筹，大巴但是安卓4.0以下用户，ios7.0以下用户的数量级已经很小，对整体的用户体验不大，当然多一个版本就是多一些赚钱的机会！
+
+```
+Weex: 5
+React Native: 4.5
+
+```
+### 3、学习成本
 Weex: 使用Vue作为上层框架，语法简单，易于上手
 React Native: 使用jsx语法，相对于Vue语法（当然Vue也支持jsx）复杂一些
 
@@ -27,7 +38,7 @@ React Native: 4
 
 ```
 
-### 3、社区贡献
+### 4、社区贡献
 
 Weex: 官方平台上，目前来看只有十个可用组件[market](https://market.dotwe.org/ext/list.htm#15),电商常用的支付模块也没有相应的社区贡献，如果没有这类组件，前端需要自己编写原生代码（OC，java）
 
