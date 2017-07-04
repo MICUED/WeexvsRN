@@ -1,7 +1,7 @@
 # weex vs RN
 
 文档版本0.0.1<br>
-说明: Weex 和 React Native 是使用js开发移动端的两大热门框架，Weex 是阿里巴巴旗下的，React Native 是facebook旗下的。二者现在均开源，以下内容主要介绍了二者的优劣，各位可从官网中了解两大技术。[Weex](http://weex.apache.org/cn/guide/)， [React Native](https://facebook.github.io/react-native/docs/getting-started.html)
+说明: Weex 和 React Native 是使用js开发移动端的两大热门框架，Weex 是阿里巴巴旗下的，React Native 是facebook旗下的。二者现在均开源，以下内容主要介绍了二者的优劣，可从官网中了解两大技术。[Weex](http://weex.apache.org/cn/guide/)， [React Native](https://facebook.github.io/react-native/docs/getting-started.html)
 ## 对比
 ### 1、跨平台
 Weex：Weex官网宣称是跨三端，确实绝大部分组件做到了跨三端，应该封装绝大部分易于抽象的，能够三端实现的组件，但是各个平台在这些组件上还是会略有差异，有些平台特定的组件或者样式Weex并没有进行[封装](http://weex.apache.org/cn/references/web-standards.html)
@@ -17,6 +17,7 @@ React Native: 3.5
 ```
 ### 2、版本要求
 Weex: 支持安卓4.0+，ios7.0+
+
 React Native: 支持安卓4.1+, ios7.0+
 
 总结: 版本要求Weex略胜一筹，大巴但是安卓4.0以下用户，ios7.0以下用户的数量级已经很小，对整体的用户体验不大，当然多一个版本就是多一些赚钱的机会！
@@ -28,6 +29,7 @@ React Native: 4.5
 ```
 ### 3、学习成本
 Weex: 使用Vue作为上层框架，语法简单，易于上手
+
 React Native: 使用jsx语法，相对于Vue语法（当然Vue也支持jsx）复杂一些
 
 总结: 排除对组件的使用，只谈语法，Vue语法明显更符合当今前端开发方式，jsx超前一些，适用于重逻辑的业务，当然，jsx熟悉之后，也非常方便。
@@ -51,4 +53,35 @@ Weex: 1
 React Native: 5
 
 ```
+
+### 5、调试
+
+Weex: Weex Devtools，可同时检查weex里DOM属性和Javascript 代码断点调试，支持IOS和Android两个平台。
+
+React Native: React Developer Tools,可同时检查weex里DOM属性和Javascript 代码断点调试, 并且可以调试redux，查看数据流。
+
+总结: 二者均有很出色的调试工具
+
+```
+Weex: 5
+React Native: 5
+
+```
+### 6、打包
+
+Weex: Weex默认打的JS bundle只包含业务JS代码，体积小很多，基础JS库包含在Weex SDK中，
+
+React Native: 官方只允许将React Native基础JS库和业务JS一起打成一个JS bundle，没有提供分包的功能，所以如果想节约流量就必须制作分包打包工具.
+
+总结: Weex更加轻量，体积小巧。
+
+```
+Weex: 5
+React Native: 3
+
+```
+
+
+
+
 
