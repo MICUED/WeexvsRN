@@ -97,8 +97,8 @@ CPU占用率：通过Android Studio 检测可以看到，cpu占用率一直在20
 总结: 
 
 ```
-Weex: 5
-React Native: 3
+Weex: 
+React Native: 
 
 ```
 
