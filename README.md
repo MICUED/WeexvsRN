@@ -82,6 +82,7 @@ React Native: 3
 ```
 ### 7、性能
 
+#### 7.1、安卓性能
 ```
 使用LG Nexus 5X测试，安卓版本7.0测试
 ```
@@ -93,6 +94,20 @@ React Native: 在React Native跑ScrollView,500条模拟数据，item高度有变
 Draw + Process + Execute = 完整显示一帧 ，这个时间要小于16ms才能保存每秒60帧。从图中可以看出，基本上维持在16ms以下。具体分析方法[GPU呈现模式分析](http://www.cnblogs.com/myzh/archive/2013/03/17/2965225.html)
 
 CPU占用率：通过Android Studio 检测可以看到，cpu占用率一直在20%左右徘徊。![cpu](android-rn-cpu.png)，最大可达24%，最低在13%左右。
+
+#### 7.2、IOS性能
+
+```
+使用iPhone6s测试，版本10.3.2测试
+```
+
+Weex: 
+
+React Native: 在React Native跑ScrollView,500条模拟数据，item高度有变化，部分item插入图片，使用xcode中Instruments分析，测得结果如图所示:
+![ios-rn](ios-rn-fps.png)
+基本上fps维持在57，58左右。
+
+CPU占用率：同样通过xcode中Instruments分析可以看到，cpu占用率一直在20%一下徘徊，偶有20%。![cpu](ios-rn-cpu.png)。
 
 总结: 
 
