@@ -1,6 +1,6 @@
 # weex vs RN
 
-文档版本0.0.1<br>
+文档版本0.0.2<br>
 说明: Weex 和 React Native 是使用js开发移动端的两大热门框架，Weex 是阿里巴巴旗下的，React Native 是facebook旗下的。二者现在均开源，以下内容主要介绍了二者的优劣，可从官网中了解两大技术。[Weex](http://weex.apache.org/cn/guide/)， [React Native](https://facebook.github.io/react-native/docs/getting-started.html)
 
 ## 对比
@@ -88,13 +88,17 @@ React Native: 3
 使用LG Nexus 5X测试，安卓版本7.0测试
 ```
 
-Weex: 
+
 
 React Native: 在React Native跑ScrollView,500条模拟数据，item高度有变化，部分item插入图片，使用安卓自带GPU呈现模式分析(Profile GPU rendering)，在开启这个功能后，系统就会记录保留每个界面最后128帧图像绘制的相关时间信息，测得结果如图所示:
 ![android-rn](android-rn-fps.png)
 Draw + Process + Execute = 完整显示一帧 ，这个时间要小于16ms才能保存每秒60帧。从图中可以看出，基本上维持在16ms以下。具体分析方法[GPU呈现模式分析](http://www.cnblogs.com/myzh/archive/2013/03/17/2965225.html)
 
 CPU占用率：通过Android Studio 检测可以看到，cpu占用率一直在20%左右徘徊。![cpu](android-rn-cpu.png)，最大可达24%，最低在13%左右。
+
+Weex: 保持着与rn相同的demo结构，测试结果如下
+![android-weex](./weex-android-ana.jpeg)
+
 
 #### 7.2、IOS性能
 
@@ -110,7 +114,11 @@ React Native: 在React Native跑ScrollView,500条模拟数据，item高度有变
 
 CPU占用率：同样通过xcode中Instruments分析可以看到，cpu占用率一直在20%一下徘徊，偶有20%。![cpu](ios-rn-cpu.png)。
 
-Weex: weex保持着和react同样的demo结构，测试结果如下:
+```
+Weex测试 :使用iPhone6s测试，版本10.3.2测试
+```
+
+weex保持着和react同样的demo结构，测试结果如下:
 cpu在20%上下：
 ![ios-weex-cpu](./weex-ios-cpu.jpeg)
 fps保持在58-59之间：
@@ -120,8 +128,8 @@ fps保持在58-59之间：
 总结: 
 
 ```
-Weex: 
-React Native: 
+Weex: 4
+React Native: 4
 
 ```
 
