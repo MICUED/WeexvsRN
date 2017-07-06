@@ -2,7 +2,8 @@
 
 文档版本0.0.1<br>
 说明: Weex 和 React Native 是使用js开发移动端的两大热门框架，Weex 是阿里巴巴旗下的，React Native 是facebook旗下的。二者现在均开源，以下内容主要介绍了二者的优劣，可从官网中了解两大技术。[Weex](http://weex.apache.org/cn/guide/)， [React Native](https://facebook.github.io/react-native/docs/getting-started.html)
-## 对比
+
+## 对比
 ### 1、跨平台
 Weex：Weex官网宣称是跨三端，确实绝大部分组件做到了跨三端，应该封装绝大部分易于抽象的，能够三端实现的组件，但是各个平台在这些组件上还是会略有差异，有些平台特定的组件或者样式Weex并没有进行[封装](http://weex.apache.org/cn/references/web-standards.html)
 
@@ -101,13 +102,20 @@ CPU占用率：通过Android Studio 检测可以看到，cpu占用率一直在20
 使用iPhone6s测试，版本10.3.2测试
 ```
 
-Weex: 
+
 
 React Native: 在React Native跑ScrollView,500条模拟数据，item高度有变化，部分item插入图片，使用xcode中Instruments分析，测得结果如图所示:
 ![ios-rn](ios-rn-fps.png)
 基本上fps维持在57，58左右。
 
 CPU占用率：同样通过xcode中Instruments分析可以看到，cpu占用率一直在20%一下徘徊，偶有20%。![cpu](ios-rn-cpu.png)。
+
+Weex: weex保持着和react同样的demo结构，测试结果如下:
+cpu在20%上下：
+![ios-weex-cpu](./weex-ios-cpu.jpeg)
+fps保持在58-59之间：
+![ios-weex-fps](./weex-ios-fps.jpeg)
+
 
 总结: 
 
@@ -119,4 +127,4 @@ React Native:
 
 
 
-
+
